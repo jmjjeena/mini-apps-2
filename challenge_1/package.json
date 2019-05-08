@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "react-dev": "webpack -d --watch",
+    "server-dev": "json-server --watch data/db.json",
+    "server": "nodemon ./server/index.js"
   },
   "author": "Jeena",
   "license": "ISC",
