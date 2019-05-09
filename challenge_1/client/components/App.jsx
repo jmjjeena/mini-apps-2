@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import { PageHeader } from 'antd';
+import { Input } from 'antd';
 
 class App extends Component {
   constructor(props) {
@@ -6,9 +9,20 @@ class App extends Component {
     this.state = {  }
   }
   render() {
+    const Search = Input.Search;
     return (
       <div>
-        Hello world!
+        <PageHeader
+          title="Historical Events Finder"
+        />
+        <div>
+          <Search
+            className="search"
+            placeholder="input search text"
+            onSearch={value => console.log(value)}
+            style={{ width : 200}}
+          />
+        </div>
       </div>
      );
   }
