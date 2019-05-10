@@ -2,7 +2,7 @@
   margin: 20px !important;
 }
 
-.react-paginate {
+.react-paginate ul {
   display: inline-block !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
