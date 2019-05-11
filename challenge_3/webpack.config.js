@@ -18,8 +18,8 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presents: [
-              '@babel/present-env',
-              '@babel/present-react'
+              '@babel/preset-env',
+              '@babel/preset-react'
             ],
           },
         },
