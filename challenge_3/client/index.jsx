@@ -1,9 +1,5 @@
-const path = require('path');
-const express = require('express');
+import React from 'react';
+import ReactDom from 'react-dom';
+import App from './components/App.jsx';
 
-const app = express();
-const port = 3003;
-
-app.use(express.static(path.join(__dirname, '../public')));
-
-app.listen(port, () => console.log(`listening on port ${port}`));
+ReactDom.render(<App />, document.getElementById('app'));
