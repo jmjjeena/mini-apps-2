@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import Pins from './Pins.jsx';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state={}
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    console.log(e.target.value)
   }
 
   render() {
     return (
       <div>
-        Hello World!
+        <Pins handleClick={this.handleClick}/>
       </div>
     );
   }
