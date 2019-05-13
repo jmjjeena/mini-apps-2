@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ScoreCard = () => {
+const ScoreBoard = () => {
   return (
     <div>
       <span>1</span>
@@ -17,4 +17,4 @@ const ScoreCard = () => {
   )
 }
 
-export default ScoreCard;
+export default ScoreBoard;

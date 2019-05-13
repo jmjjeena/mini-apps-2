@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Pins from './Pins.jsx';
-import ScoreCard from './ScoreCard.jsx';
+import ScoreBoard from './ScoreBoard.jsx/index.js.js';
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.state={}
+    this.state = {
+      scorecard: [],
+      
+    }
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -18,7 +21,7 @@ class App extends Component {
     return (
       <div>
         <Pins handleClick={this.handleClick}/>
-        <ScoreCard />
+        <ScoreBoard />
       </div>
     );
   }
