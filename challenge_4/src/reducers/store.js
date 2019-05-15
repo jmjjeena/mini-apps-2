@@ -1,10 +1,12 @@
 const store = {
   board: {
-    "0,0": {
-      hasMine: false,
-      hasFlag: false,
-      isOpen: true,
-    },
+    
+  },
+  defaultCell: {
+    hasMine: false,
+    hasFlag: false,
+    isOpen: false,
+    count: 0
   },
   size: 9
 }

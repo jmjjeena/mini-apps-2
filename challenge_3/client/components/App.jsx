@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Pins from './Pins.jsx';
-import ScoreBoard from './ScoreBoard.jsx/index.js.js';
+import ScoreBoard from './ScoreBoard.jsx';
 
 class App extends Component {
   constructor(props){
